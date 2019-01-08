@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello_fe
+  name: hellofe
   labels:
-    app: hello_fe
+    app: hellofe
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello_fe
+      app: hellofe
   template:
     metadata:
       labels:
-        app: hello_fe
+        app: hellofe
     spec:
       containers:
-      - name: hello_fe
+      - name: hellofe
         image: jfrankenbach/angular_frontend:latest
         ports:
         - containerPort: 4200

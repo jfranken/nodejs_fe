@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello_fe
+  name: hellofe
 spec:
   selector:
-    app: hello_fe
+    app: hellofe
   type: NodePort
   ports:
   - port: 4200
