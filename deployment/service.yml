@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: hello_fe
+spec:
+  selector:
+    app: hello_fe
+  type: NodePort
+  ports:
+  - port: 4200
